@@ -8,7 +8,7 @@ test.setTimeout(5 * 60 * 1000); // 5 minutes per test
 const ACTION_TIMEOUT = 3 * 60 * 1000;
 const EXPECT_TIMEOUT = 3 * 60 * 1000;
 
-// Inline login helper — credentials from Test Environment settings
+// Inline login helper — credentials from Test Environment settings.
 async function seedLogin(page) {
   await page.goto('https://dev.hellobooks.ai/login', { timeout: ACTION_TIMEOUT });
   await page.waitForLoadState('networkidle', { timeout: ACTION_TIMEOUT });
